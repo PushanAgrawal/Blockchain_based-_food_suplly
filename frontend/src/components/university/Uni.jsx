@@ -47,9 +47,6 @@ const Uni = () => {
 
 <div className=''>
 
-<Info></Info>
-<AS></AS>
-<SS></SS>
 </div>
 
 

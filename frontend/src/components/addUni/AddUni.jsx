@@ -86,8 +86,8 @@ const AddUni = () => {
         label="Id"
         variant="outlined"
         fullWidth
-        name="id"
         margin="normal"
+        name="id"
         value={formData.id}
         onChange={handleInputChange}
         />
@@ -95,8 +95,8 @@ const AddUni = () => {
         label="Date of Establishment"
         variant="outlined"
         fullWidth
-        name='doa'
         margin="normal"
+        name='doa'
         value={formData.doa}
         onChange={handleInputChange}
         />
@@ -113,8 +113,8 @@ const AddUni = () => {
         label="No of Degree Offered"
         variant="outlined"
         fullWidth
-        name='noOfDegree'
         margin="normal"
+        name='noOfDegree'
         value={formData.noOfDegree}
         onChange={handleInputChange}
         />
@@ -122,8 +122,8 @@ const AddUni = () => {
         label="University Address"
         variant="outlined"
         fullWidth
-        name='uniAdd'
         margin="normal"
+        name='uniAdd'
         value={formData.uniAdd}
         onChange={handleInputChange}
         />

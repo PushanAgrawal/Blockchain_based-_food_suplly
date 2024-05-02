@@ -1,6 +1,6 @@
-export const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+export const contractAddress = "0x66D24A986738349ded87007aA34A020b98F79d43"
 
-export const abi=  [
+export const abi= [
   {
     "inputs": [],
     "stateMutability": "nonpayable",
@@ -381,6 +381,19 @@ export const abi=  [
         "internalType": "address[]",
         "name": "",
         "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getowner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
       }
     ],
     "stateMutability": "view",

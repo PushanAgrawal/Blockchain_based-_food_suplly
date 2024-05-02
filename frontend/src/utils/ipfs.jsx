@@ -1,12 +1,19 @@
 import axios from 'axios';
-
+import proxify from 'proxify-url'
+import { HttpsAgent } from 'agentkeepalive';
 
 
 export async function extractFromIPFS(hash) {
-  const ipfsGateway = 'https://ipfs.io/ipfs/';
+  const agent = new HttpsAgent({
+    rejectUnauthorized: false,
+    requestCert: false,
+  })
+  const ipfsGateway =  'https://IPFS.IO/ipfs/';
  var response=""
   try {
-     response = await axios.get(ipfsGateway + hash);
+     response = await axios.get(ipfsGateway + hash, {
+      httpsAgent: agent,
+    });
     console.log('Content extracted from IPFS:', response.data);
   } catch (error) {
     console.error('Error extracting content from IPFS:', error.message);

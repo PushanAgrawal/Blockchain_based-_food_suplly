@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #1f3e72;
   --secondary: rgba(255, 255, 255, 0.78);
@@ -15,6 +21,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  /* height: 100vh; */
 }
 a {
   color: inherit;

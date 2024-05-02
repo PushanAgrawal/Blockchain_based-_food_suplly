@@ -1,8 +1,10 @@
 import Header from "./components/header/header";
+import Footer from "./components/Footer/Footer";
 // import Hero  from "./components/hero/hero";
 // import Companies from "./components/companies/Companies";
 // import Resedencies from "./components/Resedencies/Resedencies";
 import {
+  BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -37,18 +39,14 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-      <div className="app">
-    <div>
-    <div className="white-grad"/>
+      <div className="app flex flex-col gap-6">
+
     <Header></Header>
     
-    {/* <Hero></Hero> */}
-
-    </div>
-  
     <RouterProvider router={router} />
-    {/* <Companies></Companies> */}
-    {/* <Resedencies></Resedencies>   */}
+    <BrowserRouter router={router}>
+    <Footer></Footer>
+    </BrowserRouter>
      </div>
   );
 }

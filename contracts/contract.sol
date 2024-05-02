@@ -33,6 +33,7 @@ contract StudentLedger {
     constructor(){
         owner =msg.sender;
     }
+
    
     struct   Student {
         string identifier; // Unique identifier (e.g., national ID)
@@ -126,6 +127,9 @@ contract StudentLedger {
     // }
     // Functions for Registration and Data Management
 
+ function getowner() public  view returns(address){
+    return owner;
+ }
  function getUniStud() public  view returns(address[] memory){
     return universities[msg.sender].STU;
  }
