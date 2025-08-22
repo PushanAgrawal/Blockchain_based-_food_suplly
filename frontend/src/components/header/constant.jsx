@@ -1,502 +1,502 @@
-export const contractAddress = "0x66D24A986738349ded87007aA34A020b98F79d43"
+export const contractAddress = "0x5922451789949a81C4B3f1BbB7b859BC9519a722";
 
-export const abi= [
+export const abi = [
   {
-    "inputs": [],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
+    inputs: [],
+    stateMutability: "nonpayable",
+    type: "constructor",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "name": "Exams",
-    "outputs": [
+    name: "Exams",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "doe",
-        "type": "string"
+        internalType: "string",
+        name: "doe",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "identifier",
-        "type": "string"
+        internalType: "string",
+        name: "identifier",
+        type: "string",
       },
       {
-        "internalType": "address",
-        "name": "uniAdd",
-        "type": "address"
+        internalType: "address",
+        name: "uniAdd",
+        type: "address",
       },
       {
-        "internalType": "uint256",
-        "name": "maxMarks",
-        "type": "uint256"
-      }
+        internalType: "uint256",
+        name: "maxMarks",
+        type: "uint256",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "studentAddress",
-        "type": "address"
+        internalType: "address",
+        name: "studentAddress",
+        type: "address",
       },
       {
-        "internalType": "string",
-        "name": "courseName",
-        "type": "string"
+        internalType: "string",
+        name: "courseName",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "credits",
-        "type": "string"
+        internalType: "string",
+        name: "credits",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "completionDate",
-        "type": "string"
+        internalType: "string",
+        name: "completionDate",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "examId",
-        "type": "string"
+        internalType: "string",
+        name: "examId",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "marks",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "marks",
+        type: "string",
+      },
     ],
-    "name": "addAcademicRecord",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    name: "addAcademicRecord",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "doe",
-        "type": "string"
+        internalType: "string",
+        name: "doe",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "identifier",
-        "type": "string"
+        internalType: "string",
+        name: "identifier",
+        type: "string",
       },
       {
-        "internalType": "address",
-        "name": "uniAdd",
-        "type": "address"
+        internalType: "address",
+        name: "uniAdd",
+        type: "address",
       },
       {
-        "internalType": "address[]",
-        "name": "parStud",
-        "type": "address[]"
-      }
+        internalType: "address[]",
+        name: "parStud",
+        type: "address[]",
+      },
     ],
-    "name": "addExam",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    name: "addExam",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
   },
   {
-    "inputs": [],
-    "name": "getCourse",
-    "outputs": [
+    inputs: [],
+    name: "getCourse",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "a",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "a",
+        type: "string",
+      },
     ],
-    "name": "getExamId",
-    "outputs": [
+    name: "getExamId",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "a",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "a",
+        type: "string",
+      },
     ],
-    "name": "getExamUniadd",
-    "outputs": [
+    name: "getExamUniadd",
+    outputs: [
       {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "a",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "a",
+        type: "string",
+      },
     ],
-    "name": "getExamdoe",
-    "outputs": [
+    name: "getExamdoe",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [],
-    "name": "getMarks",
-    "outputs": [
+    inputs: [],
+    name: "getMarks",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getStudentidentifier",
-    "outputs": [
+    name: "getStudentidentifier",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getStudentipfs",
-    "outputs": [
+    name: "getStudentipfs",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getStudentname",
-    "outputs": [
+    name: "getStudentname",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getStudentuniAdress",
-    "outputs": [
+    name: "getStudentuniAdress",
+    outputs: [
       {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getUniIdentifier",
-    "outputs": [
+    name: "getUniIdentifier",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getUniIpfs",
-    "outputs": [
+    name: "getUniIpfs",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getUniLocation",
-    "outputs": [
+    name: "getUniLocation",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "a",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "a",
+        type: "address",
+      },
     ],
-    "name": "getUniName",
-    "outputs": [
+    name: "getUniName",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [],
-    "name": "getUniStud",
-    "outputs": [
+    inputs: [],
+    name: "getUniStud",
+    outputs: [
       {
-        "internalType": "address[]",
-        "name": "",
-        "type": "address[]"
-      }
+        internalType: "address[]",
+        name: "",
+        type: "address[]",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "add",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "add",
+        type: "address",
+      },
     ],
-    "name": "getUniStudowner",
-    "outputs": [
+    name: "getUniStudowner",
+    outputs: [
       {
-        "internalType": "address[]",
-        "name": "",
-        "type": "address[]"
-      }
+        internalType: "address[]",
+        name: "",
+        type: "address[]",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [],
-    "name": "getUniversities",
-    "outputs": [
+    inputs: [],
+    name: "getUniversities",
+    outputs: [
       {
-        "internalType": "address[]",
-        "name": "",
-        "type": "address[]"
-      }
+        internalType: "address[]",
+        name: "",
+        type: "address[]",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [],
-    "name": "getowner",
-    "outputs": [
+    inputs: [],
+    name: "getowner",
+    outputs: [
       {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "identifier",
-        "type": "string"
+        internalType: "string",
+        name: "identifier",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
+        internalType: "string",
+        name: "name",
+        type: "string",
       },
       {
-        "internalType": "address",
-        "name": "studentAdd",
-        "type": "address"
+        internalType: "address",
+        name: "studentAdd",
+        type: "address",
       },
       {
-        "internalType": "address",
-        "name": "univeristyAdress",
-        "type": "address"
+        internalType: "address",
+        name: "univeristyAdress",
+        type: "address",
       },
       {
-        "internalType": "string",
-        "name": "contactDetails",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "contactDetails",
+        type: "string",
+      },
     ],
-    "name": "registerStudent",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    name: "registerStudent",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
+        internalType: "string",
+        name: "name",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "location",
-        "type": "string"
+        internalType: "string",
+        name: "location",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "detailIpfs",
-        "type": "string"
+        internalType: "string",
+        name: "detailIpfs",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "identifier",
-        "type": "string"
+        internalType: "string",
+        name: "identifier",
+        type: "string",
       },
       {
-        "internalType": "address",
-        "name": "UniAdd",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "UniAdd",
+        type: "address",
+      },
     ],
-    "name": "registerUniversity",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    name: "registerUniversity",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
   },
   {
-    "inputs": [
+    inputs: [
       {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
     ],
-    "name": "students",
-    "outputs": [
+    name: "students",
+    outputs: [
       {
-        "internalType": "string",
-        "name": "identifier",
-        "type": "string"
+        internalType: "string",
+        name: "identifier",
+        type: "string",
       },
       {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
+        internalType: "string",
+        name: "name",
+        type: "string",
       },
       {
-        "internalType": "address",
-        "name": "univeristyAdress",
-        "type": "address"
+        internalType: "address",
+        name: "univeristyAdress",
+        type: "address",
       },
       {
-        "internalType": "string",
-        "name": "detailsIpfs",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "detailsIpfs",
+        type: "string",
+      },
     ],
-    "stateMutability": "view",
-    "type": "function"
-  }
-]
+    stateMutability: "view",
+    type: "function",
+  },
+];

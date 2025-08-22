@@ -106,7 +106,7 @@ const Header = () => {
           <a href="">Get Started</a> */}
   
 
-          <button className="button" onClick={()=>connect()}>
+          <button className="p-8 font-bold rounded py-4 bg-emerald-900" onClick={()=>connect()}>
         {value}
           </button>
       

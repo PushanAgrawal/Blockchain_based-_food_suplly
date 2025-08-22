@@ -5,6 +5,10 @@ import "./MainPage.css";
 import { ethers } from "../header/ethers-5.6.esm.min.jsx";
 import { useState } from "react";
 import { abi, contractAddress } from "../header/constant.jsx";
+import minsitry from "../../assets/govt.png"
+import company from "../../assets/company.png"
+import univ from "../../assets/college.jpg"
+import student from "../../assets/student.jpg"
 
 // import {dispatch} from
 // import Card from '@mui/material'
@@ -103,35 +107,46 @@ const MainPage = () => {
     // </Box>
 
     <div className="flex items-center justify-center   ">
-      <div className="flex  flex-col items-center justify-center gap-1  bg-black mx-[10rem] my-[5rem]  w-1/2 rounded-2xl shadow-2xl ">
+      <div className="flex  flex-col items-center justify-center gap-1  bg-black mx-[10rem] my-[5rem]   rounded-2xl shadow-2xl ">
         <div className="flex ml-[10rem] mr-[10rem] mt-3 pt-1   justify-center rounded-lg text-slate-300 text-2xl">
           <span className="font-Rampart brightness-125">Connect WALLET</span>
         </div>
-        <div className="flex flex-col gap-5 ml-3 mr-3 p-10 w-full text-center ">
-          <div className="flex -flex-row justify-around ">
+        <div className="flex  gap-[20rem] ml-3 mr-3 p-10 w-full text-center items-center justify-between ">
+          {/* <div className="flex flex-row justify-around "> */}
+          <div className="flex flex-col">
+          <img src={minsitry} className="h-40 w-40"></img>
             <div
               className="flex   mt-3 mb-1 hover:animate-bounce bg-emerald-900	brightness-150 text-2xl hover:bg-sky-800    justify-center p-2 pl-5 pr-5 rounded-lg text-slate-300 cursor-pointer"
               onClick={() => loginMin()}
             >
               <span className="font-Rampart">Ministry</span>
             </div>
-
-            <Link to={"./student"}>
+            </div>
+            <div className="flex flex-col">
+            <img src={student} className="h-40 w-40"></img>
               <div className="flex   mt-3 mb-1 hover:animate-bounce  bg-emerald-900	brightness-150 text-2xl hover:bg-sky-800    justify-center p-2 pl-5 pr-5 rounded-lg text-slate-300 cursor-pointer ">
+            <Link to={"./student"}>
                 <span className="font-Rampart">Student</span>
-              </div>
             </Link>
-          </div>
-          <div className="flex -flex-row justify-around ">
+              </div>
+              </div>
+          {/* </div> */}
+          {/* <div className="flex -flex-row justify-around "> */}
+          <div className="flex flex-col">
+            <img src={univ} className="h-40 w-40"></img>
             <div className="flex   mt-3 mb-1 hover:animate-bounce bg-emerald-900	brightness-150 text-2xl hover:bg-sky-800    justify-center p-2 pl-5 pr-5 rounded-lg text-slate-300">
               <Link to={"/uni"}>
                 <span className="font-Rampart">Instutuion</span>
               </Link>
             </div>
+          </div>
+          <div className="flex flex-col">
+          <img src={company} className="h-40 w-40"></img>
             <div className="flex   mt-3 mb-1 hover:animate-bounce bg-emerald-900	brightness-150  text-2xl hover:bg-sky-800  justify-center p-2 pl-5 pr-5 rounded-lg text-slate-300">
               <span className="font-Rampart">Companies</span>
             </div>
-          </div>
+            </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

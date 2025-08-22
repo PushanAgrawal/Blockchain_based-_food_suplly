@@ -3,7 +3,9 @@ const { ethers } = require("hardhat")
 
 async function main(){
 
-  const [owner,seed,farmer,process,dist,retail] = await ethers.getSigners();
+  const [owner, seed, farmer, process, dist, retail] =
+    await ethers.getSigners();
+  console.log(owner.address);
 
   const tranc =  await ethers.getContractFactory('StudentLedger');
   const tranc_dep = await tranc.deploy();

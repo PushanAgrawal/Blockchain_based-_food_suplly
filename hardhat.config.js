@@ -24,7 +24,7 @@ module.exports = {
 
     ///// SEPOLIA //////////////////////////
 
-      accounts: [`0x3e36ee44398daa5c1a693cbc0b634547909f3153806ecb4483c5ddb797996432`
+      accounts: [`0x4db1325a07bc3af35aa7a75124b62eb8e74ee9a6d340563e0b793d926f0d8d70`
 
     ],  //0x73E29cD70CBA744Cd1277EC2B2383B6eB147619c
        //0x02869714153A46E861FaaD428b5fa32F05528190

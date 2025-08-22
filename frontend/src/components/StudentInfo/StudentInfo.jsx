@@ -5,6 +5,8 @@ import { abi, contractAddress } from "../header/constant";
 import Info from "../info/Info";
 import SH from "./SH";
 import GAR from "./GAR";
+import { extractFromIPFS, ipfsUp } from "../../utils/ipfs";
+
 const StudentInfo = () => {
   const [name, setname] = useState("");
   const [id, setid] = useState("");
@@ -33,7 +35,7 @@ const StudentInfo = () => {
         setid(transactionResponse.toString());
 
         var tranc = await contract.getCourse();
-        console.log("get")
+        console.log("get");
         var a = { marks: "", course: "" };
         a.marks = 20;
         a.course = "newcourse";
@@ -44,6 +46,10 @@ const StudentInfo = () => {
         var temp = [a];
 
         setData(temp);
+        var tranc = await contract.getStudentipfs(signer.getAddress());
+        var ans = tranc.toString();
+        console.log(ans);
+        var ipfsdata= extractFromIPFS(ans)
         // console.log(a);
 
         //   console.log(transactionResponse.toString())

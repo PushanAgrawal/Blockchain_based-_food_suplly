@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-      <div className="app flex flex-col gap-6">
+      <div className="app bg-slate-500 flex flex-col gap-6">
 
     <Header></Header>
     

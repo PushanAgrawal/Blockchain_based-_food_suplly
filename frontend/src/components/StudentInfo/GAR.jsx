@@ -12,7 +12,7 @@ const GAR = () => {
           async function getStudents(){
               if (typeof window.ethereum !== "undefined") {
                 const provider = new ethers.providers.Web3Provider(window.ethereum)
-                console.log("hi")
+                  console.log("hi")
                 await provider.send('eth_requestAccounts', [])
                 const signer = provider.getSigner()
                 const contract = new ethers.Contract(contractAddress, abi, signer)
